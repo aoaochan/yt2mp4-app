@@ -5,10 +5,71 @@ html, body, #app {
 }
 
 #app {
-  display: flex; justify-content: center; align-items: center;
+  display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
 }
 
-p {
+.title, p, label {
   margin: 0; padding: 0;
-  font-family: "Pretendard", sans-serif, serif; font-size: 16px; font-weight: 100; color: white;
+  font-family: "Pretendard", sans-serif, serif;
+  color: white;
+}
+
+.title {
+  margin-top: 8px; margin-bottom: 12px;
+  font-size: 32px; font-weight: 400;
+}
+.desc {
+  font-weight: 200;
+  color: lightgrey;
+}
+.topdesc {
+  margin-bottom: 16px;
+}
+
+p, label {
+  font-size: 16px; font-weight: 100;
+}
+
+input[type="text"] {
+  margin: 0; padding: 8px;
+  width: 480px;
+  font-family: "Pretendard", sans-serif, serif; font-size: 14px; font-weight: 300;
+  color: black;
+  border: none;
+  border-radius: 16px;
+}
+input[type="number"] {
+  margin: 0; padding: 8px;
+  width: 188px;
+  font-family: "Pretendard", sans-serif, serif; font-size: 14px; font-weight: 300;
+  color: black;
+  border: none;
+  border-radius: 16px;
+}
+.ig {
+  margin: 0 0 11px 0; padding: 6px;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+#submit {
+  margin: 9px 0 14px 0; padding: 8px;
+  width: 100%;
+  border: none; border-radius: 16px;
+  font-family: "Pretendard", sans-serif, serif; font-size: 16px; font-weight: 300;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+#submit:hover {
+  background-color: rgb(179, 179, 179);
+}
+#submit:active {
+  background-color: rgb(95, 95, 95);
+}
+
+form {
+  width: 512px;
+}
+#list {
+  width: 512px; height: 384px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
 }

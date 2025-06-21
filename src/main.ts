@@ -1,3 +1,6 @@
+// import { message } from "@tauri-apps/plugin-dialog";
+import { elNothing } from "./element";
+
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("Hello, world!");
+  elNothing.create();
 });

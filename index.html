@@ -10,7 +10,36 @@
   </head>
   <body>
     <div id="app">
-      <p>Hello, world!</p>
+      <p class="title">yt2mp4-app</p>
+      <p class="desc topdesc">유튜브 영상을 손쉽게 DL, CROP, MERGE, CONCAT!</p>
+      <form id="addingform" class="ig">
+        <div class="ig">
+          <label for="input-title">제목</label><br>
+          <input type="text" spellcheck="false" id="input-title" name="input-title" value="히히 방구뿡뿡 아자자자잣"><br>
+        </div>
+        <div class="ig">
+          <label for="input-url">URL</label><br>
+          <input type="text" spellcheck="false" id="input-url" name="input-url" value="https://..."><br>
+        </div>
+        <div class="ig">
+          <div class="ig">
+            <input type="checkbox" id="input-controltime" name="input-controltime" value="true">
+            <label for="input-controltime">영상을 자르지 않고 추가</label>
+          </div>
+          <div class="ig" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <div>
+              <label for="input-start">시작 시간 (초)</label><br>
+              <input type="number" id="input-start" name="input-start" value="0"><br>
+            </div>
+            <div>
+              <label for="input-end">종료 시간 (초)</label><br>
+              <input type="number" id="input-end" name="input-end" value="644"><br>
+            </div>
+          </div>
+        </div>
+        <input type="submit" id="submit" value="영상 추가">
+      </form>
+      <div id="list" class="ig"></div>
     </div>
   </body>
 </html>
